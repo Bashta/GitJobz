@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,9 +11,10 @@
 		041823712409543200104C23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041823702409543200104C23 /* SceneDelegate.swift */; };
 		041823732409543200104C23 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041823722409543200104C23 /* FirstViewController.swift */; };
 		041823752409543200104C23 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041823742409543200104C23 /* SecondViewController.swift */; };
-		041823782409543200104C23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041823762409543200104C23 /* Main.storyboard */; };
 		0418237A2409543800104C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041823792409543800104C23 /* Assets.xcassets */; };
-		0418237D2409543800104C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0418237B2409543800104C23 /* LaunchScreen.storyboard */; };
+		0418238C24095A5F00104C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0418237B2409543800104C23 /* LaunchScreen.storyboard */; };
+		0418238D24095A5F00104C23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041823762409543200104C23 /* Main.storyboard */; };
+		BE88B08D5BC18CFD56F4E8FD /* Pods_GitJobz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DBF22E73D001AF0E4C417D /* Pods_GitJobz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		041823792409543800104C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0418237C2409543800104C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0418237E2409543800104C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40DBF22E73D001AF0E4C417D /* Pods_GitJobz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitJobz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2BCC9D4617CAF3703FE25D /* Pods-GitJobz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitJobz.debug.xcconfig"; path = "Target Support Files/Pods-GitJobz/Pods-GitJobz.debug.xcconfig"; sourceTree = "<group>"; };
+		D881E1BBBD8D91FE8B255B66 /* Pods-GitJobz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitJobz.release.xcconfig"; path = "Target Support Files/Pods-GitJobz/Pods-GitJobz.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE88B08D5BC18CFD56F4E8FD /* Pods_GitJobz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				0418236D2409543200104C23 /* GitJobz */,
 				0418236C2409543200104C23 /* Products */,
+				B4F951DD72BF39B89B410576 /* Pods */,
+				9E58B3FFEFEE582B2594952E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +65,89 @@
 		0418236D2409543200104C23 /* GitJobz */ = {
 			isa = PBXGroup;
 			children = (
-				0418236E2409543200104C23 /* AppDelegate.swift */,
-				041823702409543200104C23 /* SceneDelegate.swift */,
-				041823722409543200104C23 /* FirstViewController.swift */,
-				041823742409543200104C23 /* SecondViewController.swift */,
-				041823762409543200104C23 /* Main.storyboard */,
-				041823792409543800104C23 /* Assets.xcassets */,
-				0418237B2409543800104C23 /* LaunchScreen.storyboard */,
-				0418237E2409543800104C23 /* Info.plist */,
+				0418238A2409585B00104C23 /* Controller */,
+				041823892409583400104C23 /* Supporting */,
+				041823882409582600104C23 /* Service */,
+				041823872409581F00104C23 /* Networking */,
+				041823862409581500104C23 /* ViewModel */,
+				04182385240957FC00104C23 /* Model */,
+				04182384240957F000104C23 /* View */,
 			);
 			path = GitJobz;
+			sourceTree = "<group>";
+		};
+		04182384240957F000104C23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0418237B2409543800104C23 /* LaunchScreen.storyboard */,
+				041823762409543200104C23 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04182385240957FC00104C23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		041823862409581500104C23 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		041823872409581F00104C23 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		041823882409582600104C23 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		041823892409583400104C23 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				041823702409543200104C23 /* SceneDelegate.swift */,
+				0418236E2409543200104C23 /* AppDelegate.swift */,
+				041823792409543800104C23 /* Assets.xcassets */,
+				0418237E2409543800104C23 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		0418238A2409585B00104C23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				041823722409543200104C23 /* FirstViewController.swift */,
+				041823742409543200104C23 /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9E58B3FFEFEE582B2594952E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40DBF22E73D001AF0E4C417D /* Pods_GitJobz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4F951DD72BF39B89B410576 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D2BCC9D4617CAF3703FE25D /* Pods-GitJobz.debug.xcconfig */,
+				D881E1BBBD8D91FE8B255B66 /* Pods-GitJobz.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 041823812409543800104C23 /* Build configuration list for PBXNativeTarget "GitJobz" */;
 			buildPhases = (
+				030A6E9EC71A1723F11BB8F3 /* [CP] Check Pods Manifest.lock */,
 				041823672409543200104C23 /* Sources */,
 				041823682409543200104C23 /* Frameworks */,
 				041823692409543200104C23 /* Resources */,
+				93758D09281F885B491041FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,13 +210,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0418237D2409543800104C23 /* LaunchScreen.storyboard in Resources */,
+				0418238C24095A5F00104C23 /* LaunchScreen.storyboard in Resources */,
+				0418238D24095A5F00104C23 /* Main.storyboard in Resources */,
 				0418237A2409543800104C23 /* Assets.xcassets in Resources */,
-				041823782409543200104C23 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		030A6E9EC71A1723F11BB8F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitJobz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93758D09281F885B491041FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitJobz/Pods-GitJobz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitJobz/Pods-GitJobz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitJobz/Pods-GitJobz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		041823672409543200104C23 /* Sources */ = {
@@ -286,15 +410,18 @@
 		};
 		041823822409543800104C23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D2BCC9D4617CAF3703FE25D /* Pods-GitJobz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 88V5AMKH5K;
-				INFOPLIST_FILE = GitJobz/Info.plist;
+				INFOPLIST_FILE = GitJobz/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = io.b4sht4.GitJobz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -304,15 +431,18 @@
 		};
 		041823832409543800104C23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D881E1BBBD8D91FE8B255B66 /* Pods-GitJobz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 88V5AMKH5K;
-				INFOPLIST_FILE = GitJobz/Info.plist;
+				INFOPLIST_FILE = GitJobz/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = io.b4sht4.GitJobz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
