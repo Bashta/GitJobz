@@ -16,14 +16,14 @@ enum JobsSection: Int, CaseIterable {
     var headerTitle: String {
         switch self {
         case .jobs:
-            return "discover_movies_header_title".localized()
+            return "jobs_header_title".localized()
         }
     }
     
     var headerDescription: String {
         switch self {
         case .jobs:
-            return "discover_movies_header_description".localized()
+            return "jobs_header_title_description".localized()
         }
     }
     
