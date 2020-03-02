@@ -26,15 +26,16 @@ enum JobsSection: Int, CaseIterable {
             return "jobs_header_title_description".localized()
         }
     }
-    
-    // MARK: - Helpers
 }
 
 class FirstViewController: UIViewController {
     
+    // MARK: - Outlets
+    
     @IBOutlet private weak var collectionView: UICollectionView!
     
     // MARK: - Properties
+    
     private var dataSource: UICollectionViewDiffableDataSource<JobsSection, JobViewModel>!
     
     override func viewDidAppear(_ animated: Bool) {
@@ -60,17 +61,23 @@ class FirstViewController: UIViewController {
 // MARK: - Helpers
 
 extension FirstViewController {
+    
     func updateDatasource(withViewmodels viewModels: [JobViewModel]) {
         var snapshot = NSDiffableDataSourceSnapshot<JobsSection, JobViewModel>()
         snapshot.appendSections(JobsSection.allCases)
         snapshot.appendItems(viewModels)
         self.dataSource.apply(snapshot, animatingDifferences: true)
     }
+    
 }
 
 // MARK: - UICollectionViewDelegate
 
 extension FirstViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+    }
     
 }
 
@@ -99,4 +106,5 @@ extension FirstViewController {
             return cell
         })
     }
+    
 }

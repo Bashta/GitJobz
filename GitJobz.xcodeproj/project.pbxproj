@@ -81,7 +81,6 @@
 				0436AB56240D1941002EE718 /* Extensions */,
 				0418238A2409585B00104C23 /* Controller */,
 				041823892409583400104C23 /* Supporting */,
-				041823882409582600104C23 /* Service */,
 				041823872409581F00104C23 /* Networking */,
 				041823862409581500104C23 /* ViewModel */,
 				04182385240957FC00104C23 /* Model */,
@@ -122,13 +121,6 @@
 				041823902409660B00104C23 /* Repos */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		041823882409582600104C23 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		041823892409583400104C23 /* Supporting */ = {
