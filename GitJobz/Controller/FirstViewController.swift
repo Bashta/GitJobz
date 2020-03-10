@@ -50,7 +50,7 @@ class FirstViewController: UIViewController {
             
             switch result {
             case .success(let viewModels):
-                self.updateDatasource(withViewmodels: viewModels)
+                self.updateCollectionView(withViewmodels: viewModels)
             case .failure(let error):
                 print(error)
             }
@@ -69,6 +69,14 @@ extension FirstViewController {
         self.dataSource.apply(snapshot, animatingDifferences: true)
     }
     
+    func updateCollectionView(withViewmodels viewModels: [JobViewModel]) {
+         // Add all sections initially
+         var snapshot = NSDiffableDataSourceSnapshot<JobsSection, JobViewModel>()
+         snapshot.appendSections(JobsSection.allCases)
+         snapshot.appendItems(viewModels, toSection: .jobs)
+
+         dataSource.apply(snapshot, animatingDifferences: true)
+     }
 }
 
 // MARK: - UICollectionViewDelegate
@@ -78,7 +86,28 @@ extension FirstViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
     }
+}
+
+
+// MARK: - Collection View Layout
+
+private extension FirstViewController {
     
+    private func createLayout() -> UICollectionViewLayout {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
+                                              heightDimension: .fractionalHeight(1))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        item.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                               heightDimension: .fractionalWidth(0.5))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
+                                                         subitems: [item])
+
+        let section = NSCollectionLayoutSection(group: group)
+
+        let layout = UICollectionViewCompositionalLayout(section: section)
+        return layout
+    }
 }
 
 // MARK: - Controller Setup
@@ -88,6 +117,10 @@ extension FirstViewController {
     func setupController() {
         registerCells()
         setupDatasource()
+        
+        // Create Layout
+        collectionView.collectionViewLayout = createLayout()
+        
     }
     
     func registerCells() {
@@ -105,6 +138,16 @@ extension FirstViewController {
             cell.setupCell(withViewModel: viewModel, indexPath: indexPath)
             return cell
         })
+        
+        dataSource.supplementaryViewProvider = { collectionView, kind, indexPath in
+                   guard kind == UICollectionView.elementKindSectionHeader else { return nil }
+//                   let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+//                                                                                withReuseIdentifier: GenericHeaderCollectionReusableView.reuseIdentifier,
+//                                                                                for: indexPath) as? GenericHeaderCollectionReusableView
+//                   let section = DiscoverSection(rawValue: indexPath.section)
+//                   header?.setup(withViewModel: self.viewModel, forDiscoverSection: section!)
+                   return nil
+               }
     }
     
 }

@@ -24,6 +24,9 @@ class JobCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        layer.cornerRadius = 5
+        logoImageView.layer.cornerRadius = 5
     }
     
     override func prepareForReuse() {
