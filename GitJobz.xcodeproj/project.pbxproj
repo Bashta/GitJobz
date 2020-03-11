@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0418236F2409543200104C23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418236E2409543200104C23 /* AppDelegate.swift */; };
-		041823712409543200104C23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041823702409543200104C23 /* SceneDelegate.swift */; };
 		041823732409543200104C23 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041823722409543200104C23 /* FirstViewController.swift */; };
-		0418237A2409543800104C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041823792409543800104C23 /* Assets.xcassets */; };
 		0418238C24095A5F00104C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0418237B2409543800104C23 /* LaunchScreen.storyboard */; };
 		0418238D24095A5F00104C23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041823762409543200104C23 /* Main.storyboard */; };
 		0418238F240962B900104C23 /* JobsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418238E240962B900104C23 /* JobsRepository.swift */; };
 		041823932409662800104C23 /* JobResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041823922409662800104C23 /* JobResponse.swift */; };
+		041C439A2418678A006BCB38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041C43992418678A006BCB38 /* Assets.xcassets */; };
+		041C439E24186797006BCB38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C439C24186797006BCB38 /* SceneDelegate.swift */; };
+		041C43A0241867A7006BCB38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C439F241867A6006BCB38 /* AppDelegate.swift */; };
 		0436AB58240D1952002EE718 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436AB57240D1952002EE718 /* StringExtension.swift */; };
 		0436AB5C240D3F80002EE718 /* JobCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436AB5A240D3F80002EE718 /* JobCollectionViewCell.swift */; };
 		0436AB5D240D3F80002EE718 /* JobCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0436AB5B240D3F80002EE718 /* JobCollectionViewCell.xib */; };
@@ -25,15 +25,15 @@
 
 /* Begin PBXFileReference section */
 		0418236B2409543200104C23 /* GitJobz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitJobz.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0418236E2409543200104C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		041823702409543200104C23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		041823722409543200104C23 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		041823772409543200104C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		041823792409543800104C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0418237C2409543800104C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0418237E2409543800104C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0418238E240962B900104C23 /* JobsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsRepository.swift; sourceTree = "<group>"; };
 		041823922409662800104C23 /* JobResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobResponse.swift; sourceTree = "<group>"; };
+		041C43992418678A006BCB38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		041C439B24186797006BCB38 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041C439C24186797006BCB38 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		041C439F241867A6006BCB38 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0436AB57240D1952002EE718 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		0436AB5A240D3F80002EE718 /* JobCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCollectionViewCell.swift; sourceTree = "<group>"; };
 		0436AB5B240D3F80002EE718 /* JobCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -77,14 +77,14 @@
 		0418236D2409543200104C23 /* GitJobz */ = {
 			isa = PBXGroup;
 			children = (
+				04182384240957F000104C23 /* View */,
 				0436AB60240D5319002EE718 /* Services */,
 				0436AB56240D1941002EE718 /* Extensions */,
 				0418238A2409585B00104C23 /* Controller */,
-				041823892409583400104C23 /* Supporting */,
 				041823872409581F00104C23 /* Networking */,
 				041823862409581500104C23 /* ViewModel */,
 				04182385240957FC00104C23 /* Model */,
-				04182384240957F000104C23 /* View */,
+				041C439824186773006BCB38 /* Supporting */,
 			);
 			path = GitJobz;
 			sourceTree = "<group>";
@@ -123,17 +123,6 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		041823892409583400104C23 /* Supporting */ = {
-			isa = PBXGroup;
-			children = (
-				041823702409543200104C23 /* SceneDelegate.swift */,
-				0418236E2409543200104C23 /* AppDelegate.swift */,
-				041823792409543800104C23 /* Assets.xcassets */,
-				0418237E2409543800104C23 /* Info.plist */,
-			);
-			path = Supporting;
-			sourceTree = "<group>";
-		};
 		0418238A2409585B00104C23 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +145,17 @@
 				041823922409662800104C23 /* JobResponse.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		041C439824186773006BCB38 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				041C43992418678A006BCB38 /* Assets.xcassets */,
+				041C439B24186797006BCB38 /* Info.plist */,
+				041C439C24186797006BCB38 /* SceneDelegate.swift */,
+				041C439F241867A6006BCB38 /* AppDelegate.swift */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 		0436AB56240D1941002EE718 /* Extensions */ = {
@@ -262,8 +262,8 @@
 			files = (
 				0436AB5D240D3F80002EE718 /* JobCollectionViewCell.xib in Resources */,
 				0418238C24095A5F00104C23 /* LaunchScreen.storyboard in Resources */,
+				041C439A2418678A006BCB38 /* Assets.xcassets in Resources */,
 				0418238D24095A5F00104C23 /* Main.storyboard in Resources */,
-				0418237A2409543800104C23 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,12 +319,12 @@
 				0436AB5C240D3F80002EE718 /* JobCollectionViewCell.swift in Sources */,
 				0418238F240962B900104C23 /* JobsRepository.swift in Sources */,
 				0436AB5F240D448A002EE718 /* JobViewModel.swift in Sources */,
+				041C43A0241867A7006BCB38 /* AppDelegate.swift in Sources */,
 				0436AB58240D1952002EE718 /* StringExtension.swift in Sources */,
 				041823932409662800104C23 /* JobResponse.swift in Sources */,
 				041823732409543200104C23 /* FirstViewController.swift in Sources */,
-				0418236F2409543200104C23 /* AppDelegate.swift in Sources */,
-				041823712409543200104C23 /* SceneDelegate.swift in Sources */,
 				0436AB62240D5337002EE718 /* JobsService.swift in Sources */,
+				041C439E24186797006BCB38 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

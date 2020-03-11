@@ -33,7 +33,7 @@ class JobsService {
         jobsRepository.getJobs { result in
             switch result {
             case .success(let jobsResponses):
-                let jobViemodels = jobsResponses.map { JobViewModel(withId: $0.id) }
+                let jobViemodels = jobsResponses.map { JobViewModel(withJobResponse: $0) }
                 completion(.success(jobViemodels))
             case .failure(let error):
                 completion(.failure(error))
